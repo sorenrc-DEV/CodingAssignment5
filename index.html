@@ -4,13 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Carley Sorensen">
-
   <title>Sugar Cookies Recipe</title>
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calm">
-
-  <!-- External CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calm|Open+Sans|Playfair+Display">
+  
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,64 +15,29 @@
 
 <div id="container">
 
-  <!-- ROW 1: HEADER -->
-  <div id="header">
+  <div id="header" class="row">
     <h1>Sugar Cookies Recipe</h1>
     <h2>Classic Sugar Cookies</h2>
-    <p>Recipe by: <span class="author">Allrecipes</span></p>
+    <p class="author">Recipe by: Allrecipes - Soft Sugar Cookies</p>
   </div>
 
-  <!-- ROW 2 -->
   <div class="row">
 
-    <!-- LINKS COLUMN -->
     <div class="col left">
       <h3>Links</h3>
       <ul>
-        <li><a href="#">Nutrition Info</a></li>
+        <li><a href="#">Other Recipes</a></li>
         <li><a href="#">Baking Tips</a></li>
-        <li><a href="#">Storage</a></li>
+        <li><a href="#">Dessert Ideas</a></li>
       </ul>
     </div>
 
-    <!-- IMAGE COLUMN -->
     <div class="col center">
       <figure>
-        <img src="images/sugar-cookies.jpg"
-             alt="Freshly baked sugar cookies on a plate">
+        <img src="images/sugar-cookies.jpg" alt="Freshly baked sugar cookies on a plate">
         <figcaption>Image source: Creative Commons licensed image</figcaption>
       </figure>
-    </div>
 
-    <!-- RATING + CONVERSION COLUMN -->
-    <div class="col right">
-      <h3 class="rate">Rate This Recipe</h3>
-
-      <fieldset>
-        <legend>How difficult is this recipe?</legend>
-        <label><input type="radio" name="difficulty"> Easy</label><br>
-        <label><input type="radio" name="difficulty"> Intermediate</label><br>
-        <label><input type="radio" name="difficulty"> Hard</label>
-      </fieldset>
-
-      <h3>Conversion</h3>
-      <fieldset>
-        <legend>Tablespoons to Cups</legend>
-        <label>Tablespoons:</label>
-        <input type="number" min="0" step="0.01">
-        =
-        <label>Cups:</label>
-        <input type="number" min="0" step="0.01">
-      </fieldset>
-    </div>
-
-  </div>
-
-  <!-- ROW 3 -->
-  <div class="row">
-
-    <!-- INGREDIENTS -->
-    <div class="col left">
       <h3>Ingredients</h3>
       <ul>
         <li>2 ¾ cups all-purpose flour</li>
@@ -88,7 +50,43 @@
       </ul>
     </div>
 
-    <!-- EQUIPMENT -->
+    <div class="col right">
+      <h3 class="rate">Rate This Recipe</h3>
+      <fieldset>
+        <legend>How difficult is this recipe?</legend>
+        <label for="easy"><input type="radio" name="difficulty" id="easy"> Easy</label><br>
+        <label for="medium"><input type="radio" name="difficulty" id="medium"> Intermediate</label><br>
+        <label for="hard"><input type="radio" name="difficulty" id="hard"> Hard</label>
+      </fieldset>
+
+      <h3>Conversion</h3>
+      <fieldset>
+        <legend>Convert Tablespoons to Cups</legend>
+        <label for="tblspn">Tablespoons: </label>
+        <input type="number" id="tblspn" name="tblspn" min="0" step="0.01">
+        =
+        <label for="cups">Cups: </label>
+        <input type="number" id="cups" name="cups" min="0" step="0.01">
+      </fieldset>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col left">
+      <h3>Ingredients (Repeat)</h3>
+      <ul>
+        <li>2 ¾ cups all-purpose flour</li>
+        <li>1 teaspoon baking soda</li>
+        <li>½ teaspoon baking powder</li>
+        <li>1 cup butter, softened</li>
+        <li>1 ½ cups white sugar</li>
+        <li>1 egg</li>
+        <li>1 teaspoon vanilla extract</li>
+      </ul>
+    </div>
+
     <div class="col center">
       <h3>Equipment</h3>
       <ul>
@@ -100,7 +98,6 @@
       </ul>
     </div>
 
-    <!-- DIRECTIONS -->
     <div class="col right">
       <h3>Directions</h3>
       <ol>
@@ -110,16 +107,15 @@
         <li>Beat in egg and vanilla.</li>
         <li>Gradually blend in dry ingredients.</li>
         <li>Roll dough into balls and place on baking sheet.</li>
-        <li>Bake for 8–10 minutes until lightly golden.</li>
+        <li>Bake for 8-10 minutes until lightly golden.</li>
       </ol>
     </div>
 
   </div>
 
-  <!-- ROW 4: FOOTER -->
-  <div id="footer">
+  <div id="footer" class="row">
+    <hr>
     <p>This page created as academic activity only.</p>
-    <a href="https://www.bellevuecollege.edu">Bellevue College</a>
   </div>
 
 </div>
