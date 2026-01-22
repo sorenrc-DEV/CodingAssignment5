@@ -1,0 +1,106 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+
+  /* Background Image */
+  background-image: url('../images/background.jpg'); /* replace with your image file */
+  background-size: cover;        /* cover entire page */
+  background-position: center;   /* center the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* image stays when scrolling */
+
+  color: #333;
+}
+
+/* Wrapper for content blocks */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #2e8b57; /* green */
+  margin-bottom: 0;
+}
+
+header h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #1e90ff; /* blue */
+  margin-top: 5px;
+}
+
+header p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Main content layout */
+main.content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Columns */
+.left-column, .right-column {
+  flex: 1;
+  min-width: 300px;
+
+  /* Semi-transparent background for readability */
+  background-color: rgba(255, 230, 240, 0.85); /* soft pink with transparency */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Images */
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+figcaption {
+  font-size: 0.8em;
+  color: #777;
+}
+
+/* Headings */
+h3 {
+  color: #2e8b57; /* green */
+  margin-top: 20px;
+}
+
+/* Fieldsets and Legends */
+fieldset {
+  border: 2px solid #1e90ff; /* blue borders */
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 230, 240, 0.85); /* soft pink with transparency */
+}
+
+legend {
+  font-weight: bold;
+  color: #2e8b57; /* green */
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #555;
+}
